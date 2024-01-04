@@ -621,7 +621,7 @@ void quick_sort (int arr[], int n) {
                 arr[j] = temp;
                 i++;
                 j--;
-            }
+            }e
         }
         if (low < j)
             quickSort(arr, low, j);

@@ -334,10 +334,8 @@ void insertion(int arr[],int n) {
     int i,j,min;
     for(i=1;i<n;i++) {
         min=arr[i];
-        j=i-1;
-        while(min<arr[j] && j>=0) {
+        for(j=i-1;min<arr[j] && j>=0;j--) {
             arr[j+1]=arr[j];
-            j=j-1;
         }
         arr[j+1]=min;
     }
